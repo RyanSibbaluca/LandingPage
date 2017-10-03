@@ -5,10 +5,12 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '1rem',
+    justifyContent: 'center',
+    padding: '3rem 1rem',
     backgroundColor: '#cf4646',
     color: 'white',
-    height: '100vh'
+    height: '100vh',
+    boxSizing: 'border-box'
   },
   h1: {
     fontWeight: 300,
@@ -26,19 +28,58 @@ const styles = {
     fontSize: '2rem',
     margin: '.5rem'
   }
+//   scroll: {
+//     position: 'absolute',
+//     bottom: '20px',
+//     left: '50%',
+//     display: 'inline-block',
+//     transform: 'translate(0, -50%)',
+//     paddingTop: '60px'
+//
+// // z-index: 2;
+// // -webkit-transform: translate(0, -50%);
+// // color: #fff;
+// // font: normal 400 20px/1 'Josefin Sans', sans-serif;
+// // letter-spacing: .1em;
+// // text-decoration: none;
+// // transition: opacity .3s,
+//   },
+//   icon: {
+//     position: 'absolute',
+//     top: 0,
+//     left: '50%',
+//     width: '30px',
+//     height: '50px',
+//     marginLeft: '-15px',
+//     border: '2px solid #fff',
+//     borderRadius: '50px',
+//     boxSizing: 'border-box',
+//     ':before': {
+//       position: 'absolute',
+//       top: '10px',
+//       left: '50%',
+//       content: '',
+//       width: '6px',
+//       height: '6px',
+//       marginLeft: '-3px',
+//       backgroundColor: '#fff',
+//       borderRadius: '100%',
+//       animation: 'sdb10 2s infinite',
+//       boxSizing: 'border-box'
+//     }
+//   }
 };
 
 export class Title extends Component {
   render() {
     return (
-      <div style={styles.title}>
+      <section style={styles.title}>
         <h1 style={styles.h1}>Ryan Sibbaluca</h1>
-        <div>
-          <img style={styles.logo} src="http://fountainjs.io/assets/imgs/yeoman.png"/>
-          <img style={styles.logo} src="http://fountainjs.io/assets/imgs/fountain.png"/>
-        </div>
-        <h2 style={styles.h2}>Always a pleasure scaffolding your apps.</h2>
-      </div>
+        <h2 style={styles.h2}>Full-Stack Web Developer</h2>
+        <a href="#techs" style={styles.scroll} className="scroll">
+          <span style={styles.icon} className="icon"/>
+          Scroll</a>
+      </section>
     );
   }
 }

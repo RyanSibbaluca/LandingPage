@@ -24,14 +24,14 @@ const styles = {
 export class Tech extends Component {
   render() {
     return (
-      <div style={styles.tech}>
+      <section id="techs" style={styles.tech}>
         <img style={styles.logo} src={this.props.tech.logo}/>
         <h3 style={styles.h3}>
           {this.props.tech.title}
         </h3>
         <p>{this.props.tech.text1}</p>
         <p>{this.props.tech.text2}</p>
-      </div>
+      </section>
     );
   }
 }
