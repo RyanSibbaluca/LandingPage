@@ -5,7 +5,8 @@ import {Tech} from './tech';
 
 const styles = {
   container: {
-    margin: '1rem'
+    margin: '1rem',
+    background: '#347ee3'
   },
   h2: {
     fontWeight: 300,
