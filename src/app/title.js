@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import jump from 'jump.js';
 
 const styles = {
   title: {
@@ -71,15 +72,22 @@ const styles = {
 };
 
 export class Title extends Component {
+
+  handleJumpToTechs() {
+    console.log('jump to techs');
+    jump('#techs');
+  }
+
   render() {
     return (
       <section style={styles.title}>
         <h1 style={styles.h1}>Ryan Sibbaluca</h1>
         <h2 style={styles.h2}>Full-Stack Web Developer</h2>
-        <a href="#techs" style={styles.scroll} className="scroll">
+        <a href="#techs" style={styles.scroll} className="scroll" onClick={this.handleJumpToTechs}>
           <span style={styles.icon} className="icon"/>
           Scroll</a>
       </section>
     );
   }
 }
+

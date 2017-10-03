@@ -3,6 +3,7 @@
   position: absolute;
   bottom: 20px;
   left: 50%;
+  left: calc(50% - 20px);
   display: inline-block;
   transform: translate(0, -50%);
   padding-top: 60px
