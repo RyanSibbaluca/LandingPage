@@ -1,0 +1,32 @@
+[
+  {
+    "company": "IBM",
+    "role": "Full-Stack Web Developer",
+    "duration": "Oct 2016 - Present",
+    "location": "Singapore"
+  },
+  {
+    "company": "Hewlett Packard Enterprise",
+    "role": "Web and Mobile Developer",
+    "duration": "Nov 2014 - Oct 2016",
+    "location": "Philippines"
+  },
+  {
+    "company": "Hewlett Packard Enterprise",
+    "role": "Operations Team Lead",
+    "duration": "Jan 2014 - Dec 2014",
+    "location": "Philippines"
+  },
+  {
+    "company": "HP",
+    "role": "Software Engineer | Automation Initiative Lead",
+    "duration": "Sep 2012 - Jan 2014",
+    "location": "Philippines"
+  },
+  {
+    "company": "HP",
+    "role": "Innovation Intern",
+    "duration": "Mar 2011 - June 2011",
+    "location": "Philippines"
+  }
+]

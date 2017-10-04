@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Header} from './header';
 import {Title} from './title';
 import {Summary} from './summary';
+import {Skills} from './skills';
 import {Techs} from './techs/techs';
 import {Footer} from './footer';
 
@@ -26,6 +27,7 @@ export class Main extends Component {
         <main style={styles.main}>
           <Title/>
           <Summary/>
+          <Skills/>
           <Techs/>
         </main>
         <Footer/>
