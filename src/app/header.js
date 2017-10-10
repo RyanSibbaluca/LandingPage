@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 
 const styles = {
   header: {
-    display: 'flex',
+    // display: 'flex',
+    // flexDirection: 'column',
     position: 'fixed',
-    alignItems: 'center',
-    width: '100%'
+    height: '100%'
+    // alignItems: 'center',
+    // width: '100%'
   },
   title: {
     flex: 1,
@@ -17,11 +19,22 @@ const styles = {
     textAlign: 'right',
     margin: '1rem',
     color: 'white'
+  },
+  ul: {
+    margin: 0,
+    padding: 0
+  },
+  li: {
+    display: 'block',
+    padding: '20px'
   }
 };
 
 export class Header extends Component {
+
   render() {
+    const sections = ['Intro', 'Skills', 'Work History'];
+
     return (
       <header style={styles.header}>
         <p style={styles.title}>
@@ -29,16 +42,8 @@ export class Header extends Component {
             <img height="100px" src="../rrs-logo.png"/>
           </a>
         </p>
-        <ul>
-          <li>
-            Intro
-          </li>
-          <li>
-            Skills
-          </li>
-          <li>
-            Work History
-          </li>
+        <ul style={styles.ul}>
+          {sections.map((section, i) => <li style={styles.li} key={i}>{section}</li>)}
         </ul>
       </header>
     );
